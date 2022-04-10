@@ -2,7 +2,7 @@
 
 function Navbar() {
     return(
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-10">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
             <div className="container-fluid navbar">
                 <a className="navbar-brand mx-auto navbar" href="#">Ứng dụng quản lý nhân sự V1.0</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

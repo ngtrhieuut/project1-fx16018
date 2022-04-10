@@ -1,3 +1,7 @@
 .navbar {
     font-weight: bold;
 }
+
+.border p {
+    margin-bottom: 0;
+}
