@@ -5,3 +5,8 @@
 .border p {
     margin-bottom: 0;
 }
+
+.staffinfo{
+    margin: 15px;
+    display: none;
+}
