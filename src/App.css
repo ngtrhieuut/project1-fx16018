@@ -10,3 +10,14 @@
     margin: 15px;
     display: none;
 }
+
+#dropdownmenu{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #dropdownmenu{
+        display: block;
+        margin-bottom: 15px;
+    }
+}
