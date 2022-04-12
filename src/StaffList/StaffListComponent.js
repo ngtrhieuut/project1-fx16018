@@ -1,4 +1,4 @@
-import { STAFFS, DEPARTMENTS } from './staffs';
+import { STAFFS} from './staffs';
 import dateFormat, { masks } from "dateformat";
 
 function Staff() {
@@ -6,11 +6,11 @@ function Staff() {
         const mapColumns = document.querySelectorAll(".main")
         console.log(mapColumns.length)
             for (var i = 0; i < mapColumns.length; i++) {
-                if (mapColumns[i].classList[2] == "col-lg-6") {
+                if (mapColumns[i].classList[2] === "col-lg-6") {
                     mapColumns[i].classList.remove('col-lg-6')
                     mapColumns[i].classList.add('col-lg-12')
                     console.log(mapColumns[i].classList)
-                } else if (mapColumns[i].classList[2] == "col-lg-4") {
+                } else if (mapColumns[i].classList[2] === "col-lg-4") {
                     mapColumns[i].classList.remove('col-lg-4')
                     mapColumns[i].classList.add('col-lg-12')
                     console.log(mapColumns[i].classList)
@@ -26,11 +26,11 @@ function Staff() {
         const mapColumns = document.querySelectorAll(".main")
         console.log(mapColumns.length)
             for (var i = 0; i < mapColumns.length; i++) {
-                if (mapColumns[i].classList[2] == "col-lg-6") {
+                if (mapColumns[i].classList[2] === "col-lg-6") {
                     mapColumns[i].classList.remove('col-lg-6')
                     mapColumns[i].classList.add('col-lg-6')
                     console.log(mapColumns[i].classList)
-                } else if (mapColumns[i].classList[2] == "col-lg-4") {
+                } else if (mapColumns[i].classList[2] === "col-lg-4") {
                     mapColumns[i].classList.remove('col-lg-4')
                     mapColumns[i].classList.add('col-lg-6')
                     console.log(mapColumns[i].classList)
@@ -46,11 +46,11 @@ function Staff() {
         const mapColumns = document.querySelectorAll(".main")
         console.log(mapColumns.length)
             for (var i = 0; i < mapColumns.length; i++) {
-                if (mapColumns[i].classList[2] == "col-lg-6") {
+                if (mapColumns[i].classList[2] === "col-lg-6") {
                     mapColumns[i].classList.remove('col-lg-6')
                     mapColumns[i].classList.add('col-lg-4')
                     console.log(mapColumns[i].classList)
-                } else if (mapColumns[i].classList[2] == "col-lg-4") {
+                } else if (mapColumns[i].classList[2] === "col-lg-4") {
                     mapColumns[i].classList.remove('col-lg-4')
                     mapColumns[i].classList.add('col-lg-4')
                     console.log(mapColumns[i].classList)
@@ -80,7 +80,7 @@ function Staff() {
                             <div className="accordion-item" onClick={() => {
                                 const setShow = document.getElementById(staffinfo.id)
                                 console.log(setShow)
-                                if (setShow.style.display == 'block') {
+                                if (setShow.style.display === 'block') {
                                     document.getElementById(staffinfo.id).style.display = 'none';
                                 } else {
                                     document.getElementById(staffinfo.id).style.display = 'block';
@@ -98,6 +98,7 @@ function Staff() {
                                         <p><strong>Phòng ban: </strong>{staffinfo.department.name}</p>
                                         <p><strong>Số ngày nghỉ còn lại: </strong>{staffinfo.annualLeave}</p>
                                         <p><strong>Số ngày đã làm thêm: </strong>{staffinfo.overTime}</p>
+                                        <p><img src={staffinfo.image} /></p>
                                     </div>
                                 </div>
                             </div>
