@@ -21,3 +21,14 @@
         margin-bottom: 15px;
     }
 }
+
+.staffname {
+    background-color: #f8f9fa;
+    text-align: center;
+    color: white;
+}
+
+.navbar-expand-lg h1 {
+    font-size: 30px;
+    color: white;
+}
