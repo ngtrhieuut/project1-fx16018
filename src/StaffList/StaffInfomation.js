@@ -9,8 +9,6 @@ function StaffInfomation() {
     const params = useParams()
     const staffInfo = STAFFS.find(staff => staff.id.toString() === params.staffId)
 
-    console.log(staffInfo)
-
     library.add(faArrowRightLong);
 
     return(
@@ -35,7 +33,4 @@ function StaffInfomation() {
         </div>
     )
 }
-
-
-
 export default StaffInfomation;

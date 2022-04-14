@@ -16,7 +16,7 @@ export const DEPARTMENTS =
             numberOfStaff: 2
         },
         {
-            id: "Dept04",
+            id: "Dept04",   
             name: "IT",
             numberOfStaff: 1
         },

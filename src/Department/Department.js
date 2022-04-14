@@ -1,10 +1,15 @@
-import { STAFFS, DEPARTMENTS } from '../StaffList/staffs'
+import { DEPARTMENTS } from '../StaffList/staffs'
 
 
 function Department() {
 
     return (
         <div className="dep container">
+            <div>
+                <p id='arrowLong'>
+                   Phòng ban
+                </p>
+            </div>
             <div className='row'>
                 {DEPARTMENTS.map(dept => (
                     <div className="card col-12 col-md-6 col-lg-4" key={dept.id}>

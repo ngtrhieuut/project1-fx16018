@@ -22,7 +22,7 @@ function Salary() {
             <div className='row'>
                 {STAFFS.map(salary => (
                     <div className="card col-12 col-md-6 col-lg-4 salary" key={salary.id}>
-                        <div className="card-body">
+                        <div className="card-body"> 
                             <h5 className="card-title">{salary.name}</h5>
                             <h6 className="card-subtitle mb-2 text-muted">Mã nhân viên: {salary.id}</h6>
                             <h6 className="card-subtitle mb-2 text-muted">Hệ số lương: {salary.salaryScale}</h6>
@@ -32,7 +32,7 @@ function Salary() {
                             </div>
                         </div>
                     </div>
-                ))}                
+                ))}
             </div>
         </div>
     )
