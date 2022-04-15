@@ -11,7 +11,7 @@ function SearchStaff() {
     
     const handleSearchStaff = () => {
         for(var i = 0; i<STAFFS.length; i++) {
-             if (inputStaff == STAFFS[i].name) {
+             if (inputStaff === STAFFS[i].name) {
               newStaff.push(STAFFS[i])
             } 
           }
